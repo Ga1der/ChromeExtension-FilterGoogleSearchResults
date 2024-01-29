@@ -1,3 +1,3 @@
 # Google Denacification
 ### Remove rashists sites from Google search.
-![icon](./icon_2400.png)
+![icon](./img/icon_2400.png)
