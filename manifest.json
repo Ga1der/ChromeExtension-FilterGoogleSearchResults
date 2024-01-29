@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Google Denacification",
+    "description": "Remove rashists sites from Google search.",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon_2400.png"
+    },
+    "options_page": "popup.html",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["tabs", "activeTab", "storage", "contextMenus", "nativeMessaging"],
+    "content_scripts": [
+        {
+            "matches": ["https://www.google.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "48": "icon_2400.png"
+    }
+}
